@@ -1,0 +1,21 @@
+How to start a new python project with git (windows)
+
+pre-requisites:
+1. install git
+2. install python
+3. pip install virtualenv
+makesure all paths (git,python) have been added to the system environment variables.
+
+1. clone the repository
+git clone repo-path
+
+2. create a virtual env and activate it
+cd project-name/
+python -m virtualenv env-name
+env-name\Scripts\activate
+
+3. install packages
+pip install "django<1.12" "selenium<4"
+
+4. save your installed packages into requirements.txt
+pip freeze > requirements.txt
